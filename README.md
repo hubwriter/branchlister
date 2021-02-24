@@ -7,6 +7,9 @@ A quick way to change Git branches
 ✅ You'd like a quick, easy way to switch branches - the fewer key presses the better
 
 ## How to use branchlister
+
+<a href="https://youtu.be/_qClOhrrkB0"><img src="play-video-image.png" width=700 /></a>
+
 On the command line, in a Git location, enter `bl`.
 You get a list of 8 branches for the current repository, in order of the most recent commit to the branch, 
 with the most recently updated branch at the top of the list.
