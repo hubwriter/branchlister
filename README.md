@@ -1,13 +1,13 @@
 # branchlister
-A quick way to change git branches
+A quick way to change Git branches
 
 ## Is this for you?
-✅ You use git on the command line
-✅ You find yourself switching branches frequently
+✅ You use Git on the command line<br>
+✅ You find yourself switching branches frequently<br>
 ✅ You'd like a quick, easy way to switch branches - the fewer key presses the better
 
 ## How to use branchlister
-On the command line, in a git location, enter `bl`.
+On the command line, in a Git location, enter `bl`.
 You get a list of 8 branches for the current repository, in order of the most recent commit to the branch, 
 with the most recently updated branch at the top of the list.
 
@@ -40,8 +40,8 @@ For example, to list the 20 most recently updated branches, enter: `bl 20` (note
 ### Mnemonics
 
 Think:
-* bl = branch list
-* bb = branches
+* `bl` = branch list
+* `bb` = branches
 
 ### How does it work
 
@@ -58,27 +58,29 @@ Download xxxxxxxxxxxxxx and xxxxxxxxxxxx and save them to a suitable location (f
 
 #### 2. Create the aliases
 
-Add the following 8 aliases. Where you specify these will depend on the shell you are using.
+Add the following 8 aliases. The files you have to edit to you specify these aliases will depend on the shell you are using.
+
+IMPORTANT: The paths to the scripts must match the location in which you saved the scripts.
 
 **Windows**
 Add these aliases (e.g. for bash add these to `/c/Users/<username>/.bashrc`):
 ```
-alias bd='bash /c/Alistair/programming/bash-scripts/branchlister.sh'
-alias bb='bash /c/Alistair/programming/bash-scripts/branchpicker.sh'
-alias bb1='bash /c/Alistair/programming/bash-scripts/branchpicker.sh 1'
-alias bb2='bash /c/Alistair/programming/bash-scripts/branchpicker.sh 2'
-alias bb3='bash /c/Alistair/programming/bash-scripts/branchpicker.sh 3'
-alias bb4='bash /c/Alistair/programming/bash-scripts/branchpicker.sh 4'
-alias bb5='bash /c/Alistair/programming/bash-scripts/branchpicker.sh 5'
-alias bb6='bash /c/Alistair/programming/bash-scripts/branchpicker.sh 6'
-alias bb7='bash /c/Alistair/programming/bash-scripts/branchpicker.sh 7'
-alias bb8='bash /c/Alistair/programming/bash-scripts/branchpicker.sh 8'
+alias bl='bash /c/programming/bash-scripts/branchlister.sh'
+alias bb='bash /c/some-path/bash-scripts/branchpicker.sh'
+alias bb1='bash /c/some-path/bash-scripts/branchpicker.sh 1'
+alias bb2='bash /c/some-path/bash-scripts/branchpicker.sh 2'
+alias bb3='bash /c/some-path/bash-scripts/branchpicker.sh 3'
+alias bb4='bash /c/some-path/bash-scripts/branchpicker.sh 4'
+alias bb5='bash /c/some-path/bash-scripts/branchpicker.sh 5'
+alias bb6='bash /c/some-path/bash-scripts/branchpicker.sh 6'
+alias bb7='bash /c/some-path/bash-scripts/branchpicker.sh 7'
+alias bb8='bash /c/some-path/bash-scripts/branchpicker.sh 8'
 ```
 
 **Linux**
 Add these aliases (e.g. for bash add these to `/home/<username>/.bashrc` for GUI sessions):
 ```
-alias bd='bash /home/<username>/bash-scripts/branchlister.sh'
+alias bl='bash /home/<username>/bash-scripts/branchlister.sh'
 alias bb='bash /home/<username>/bash-scripts/branchpicker.sh'
 alias bb1='bash /home/<username>/bash-scripts/branchpicker.sh 1'
 alias bb2='bash /home/<username>/bash-scripts/branchpicker.sh 2'
@@ -124,13 +126,13 @@ bd2fd1c3ff22bdb3ef4ab2a175e4cd1e12bf58dd commit	refs/heads/rc/1.16
 ```  
 This can be formatted - e.g. here is just the branch names:
 ```
-	git for-each-ref --count=8 --sort=-committerdate refs/heads/ --format="%(refname)"
-	refs/heads/master
-	refs/heads/local-test-docker
-	refs/heads/rc/1.19
-	refs/heads/rc/1.18
-	refs/heads/newtest
-	refs/heads/rc/1.16
+git for-each-ref --count=8 --sort=-committerdate refs/heads/ --format="%(refname)"
+refs/heads/master
+refs/heads/local-test-docker
+refs/heads/rc/1.19
+refs/heads/rc/1.18
+refs/heads/newtest
+refs/heads/rc/1.16
 ```
 And here is the fully formatted list:
 ```
