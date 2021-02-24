@@ -54,7 +54,7 @@ It requires you to set up 10 aliases to specific commands.
 
 #### 1. Download the bash scripts
 
-Download xxxxxxxxxxxxxx and xxxxxxxxxxxx and save them to a suitable location (for example, `/home/<username>/bash-scripts/`).
+Download `branchlister.sh` and `branchpicker.sh` and save them to a suitable location (for example, `/home/<username>/bash-scripts/`).
 
 #### 2. Create the aliases
 
@@ -78,7 +78,7 @@ alias bb8='bash /c/some-path/bash-scripts/branchpicker.sh 8'
 ```
 
 **Linux**
-Add these aliases (e.g. for bash add these to `/home/<username>/.bashrc` for GUI sessions):
+Add these aliases (e.g. for bash add these to `~/.bash_profile`):
 ```
 alias bl='bash /home/<username>/bash-scripts/branchlister.sh'
 alias bb='bash /home/<username>/bash-scripts/branchpicker.sh'
@@ -91,18 +91,11 @@ alias bb6='bash /home/<username>/bash-scripts/branchpicker.sh 6'
 alias bb7='bash /home/<username>/bash-scripts/branchpicker.sh 7'
 alias bb8='bash /home/<username>/bash-scripts/branchpicker.sh 8'
 ```
-  
-For login shell sessions (e.g. remote logins), using bash, 
-add this to the `/home/<username>/.bash_profile` file (creating one if it doesn't exist):
-```
-. ~/.profile
-if [[ $- == *i* ]]; then . ~/.bashrc; fi
-```
 
 #### 3. Restart the shell
 
-Force the shell to apply the updated configuration, either by restarting the shell
-or by telling it to do so with a command such as (for bash): `source ~/.bashrc`.
+Force the shell to apply the updated configuration, by restarting the shell and logging in again. 
+Alternatively, tell the shell to re-read its configuration - (e.g. for bash configurations in `.bash_profile` enter `source ~/.bash_profile`).
 
 <hr>
 
