@@ -38,7 +38,8 @@ This saves me typing `git checkout fix-anchors-in-edge`.
 To check out the first branch in the list you can just enter `bb` (although `bb1` also works).
 
 If you want to list more than 8 branches, give the number of branches after `bl`. 
-For example, to list the 20 most recently updated branches, enter: `bl 20` (note the space before the number).
+For example, to list the 20 most recently updated branches, enter: `bl 20` (note the space before the number). 
+To switch to a branch listed higher than 8 use a space between `bb` and the number - e.g. `bb 15`.
 
 ### Mnemonics
 
