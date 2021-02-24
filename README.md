@@ -54,11 +54,13 @@ It requires you to set up 10 aliases to specific commands.
 
 #### 1. Download the bash scripts
 
-Download `branchlister.sh` and `branchpicker.sh` and save them to a suitable location (for example, `/home/<username>/bash-scripts/`).
+Download the latest release from https://github.com/hubwriter/branchlister/releases/, unzip the download, 
+and save `branchlister.sh` and `branchpicker.sh` to a suitable location (for example, `/home/<username>/bash-scripts/`).
 
 #### 2. Create the aliases
 
-Add the following 8 aliases. The files you have to edit to you specify these aliases will depend on the shell you are using.
+Add the following 8 aliases. The files you have to edit to create these aliases will depend on the shell you are using 
+(e.g. `.bashrc` or `.bash_profile` for bash).
 
 IMPORTANT: The paths to the scripts must match the location in which you saved the scripts.
 
