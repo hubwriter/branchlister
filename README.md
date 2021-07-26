@@ -1,5 +1,5 @@
 # branchlister
-A quick way to change Git branches
+A quick way to change Git branchesxxxxxxx
 
 ## Is this for you?
 ✅ You use Git on the command line<br>
